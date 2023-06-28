@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct SwiftUIView: View {
+    
     var body: some View {
         VStack {
             Text("Recipes to Try: ")
                 .font(.title)
                 .multilineTextAlignment(.leading)
+                
             TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                .padding(.horizontal, 100.100)
+                .padding(.all, 100.0)
                 .multilineTextAlignment(.center)
-                .border
+                .border(Color(red: 0.929, green: 0.662, blue: 0.773), width: 3)
             
         }
     }
