@@ -9,7 +9,16 @@ import SwiftUI
 
 struct SwiftUIView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Recipes to Try: ")
+                .font(.title)
+                .multilineTextAlignment(.leading)
+            TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                .padding(.horizontal, 100.100)
+                .multilineTextAlignment(.center)
+                .border
+            
+        }
     }
 }
 
