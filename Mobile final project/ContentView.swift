@@ -19,10 +19,24 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .fontWeight(.heavy)
                         .multilineTextAlignment(.center)
-                    Image("Map")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
                     
+                //NavigationStack{
+                    ZStack{
+                        Image("Map")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            //.frame(width: 350, height:230)
+                        
+                        NavigationLink(destination: View_3()) {
+                            Image("Pin")
+                                .resizable()
+                                .frame(width:20)
+                                .frame(height:20)
+                                .offset(x:10, y:10)
+                        }
+                        
+                    }
+                //}
                     
                     ZStack{
                         VStack(alignment: .leading){
