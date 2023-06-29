@@ -13,7 +13,8 @@ struct SwiftUIView: View {
         NavigationStack {
             
             ZStack {
-                Color(red: 0.929,green: 0.862, blue: 0.873)
+                Color.white
+                    .ignoresSafeArea()
                 VStack(alignment: .leading) {
                     
                     Text("Recipes to Try: ")
@@ -25,10 +26,10 @@ struct SwiftUIView: View {
                     
                     
                     TextField("Type or insert recipe links here!", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                        .padding(.all, 100.0)
+                        .padding(.all, 120.0)
                         .multilineTextAlignment(.center)
-                        .border(Color(red: 0.929, green: 0.662, blue: 0.773), width: 3)
-                        
+                        .border(Color.pink, width: 3)
+                    Spacer()
                     
                     Text("My Recipes:")
                         .font(.title)
@@ -37,15 +38,15 @@ struct SwiftUIView: View {
                         .padding(.leading, 23.0)
                     
                     TextField("Type or insert recipe links here!", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                        .padding(.all, 100.0)
+                        .padding(.all, 120.0)
                         .multilineTextAlignment(.center)
-                        .border(Color(red: 0.929, green: 0.662, blue: 0.773), width: 3)
+                        .border(Color.pink, width: 3)
                     
                 }
                 .padding(.all)
                 .navigationTitle("Recipe Journal")
                 .navigationBarTitleDisplayMode(.inline)
-                .toolbarBackground(Color(red: 0.929, green: 0.662, blue: 0.773), for: .navigationBar)
+                .toolbarBackground(Color.pink, for: .navigationBar)
                 .toolbarBackground(.visible, for: .navigationBar)
                 .bold()
             }
