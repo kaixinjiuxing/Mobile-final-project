@@ -18,7 +18,7 @@ struct SwiftUIView: View {
                 Color(red: 0.737, green: 0.615, blue: 0.759)
                     .ignoresSafeArea()
                 
-                VStack(alignment:( .leading), spacing: (50)) {
+                VStack(alignment:( .leading), spacing: (25)) {
                     
                     Text("Recipes to Try: ")
                         .font(.title)
@@ -32,36 +32,41 @@ struct SwiftUIView: View {
                         .padding(.all, 50.0)
                         .multilineTextAlignment(.center)
                         .background(Color.white.cornerRadius(10).shadow(color: Color.gray, radius: 15))
-                   
                     
-                /*    Text("My Recipes:")
-                        .font(.title)
-                        .fontWeight(.semibold)
-                        .multilineTextAlignment(.leading)
-                        .padding(.leading, 23.0)
-                        
                     
-                    TextField("Type or insert recipe links here!", text: $myRecipes)
-                        .padding(.all, 120.0)
-                        .multilineTextAlignment(.center)
-                        .background(Color.white.cornerRadius(10).shadow(color: Color.gray, radius: 15))
-                   
-                */
+                    /*    Text("My Recipes:")
+                     .font(.title)
+                     .fontWeight(.semibold)
+                     .multilineTextAlignment(.leading)
+                     .padding(.leading, 23.0)
+                     
+                     
+                     TextField("Type or insert recipe links here!", text: $myRecipes)
+                     .padding(.all, 120.0)
+                     .multilineTextAlignment(.center)
+                     .background(Color.white.cornerRadius(10).shadow(color: Color.gray, radius: 15))
+                     
+                     */
+
+                     }
+                     .padding(.all)
+                    /*
+                     .navigationTitle("Recipe Journal")
+                     .navigationBarTitleDisplayMode(.inline)
+                     .toolbarBackground(Color.white, for: .navigationBar)
+                     .toolbarBackground(.visible, for: .navigationBar)
+                     .bold()
+                    */
+                    
                 }
-                .padding(.all)
-                .navigationTitle("Recipe Journal")
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbarBackground(Color.white, for: .navigationBar)
-                .toolbarBackground(.visible, for: .navigationBar)
-                .bold()
-                 
+                
             }
         }
     }
-}
-
-struct SwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        SwiftUIView()
+    
+    struct SwiftUIView_Previews: PreviewProvider {
+        static var previews: some View {
+            SwiftUIView()
+        }
     }
-}
+
