@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
             NavigationStack {
                 ZStack {
-                    Color(.systemPink)
+                    Color(red: 0.737, green: 0.615, blue: 0.759)
                         .ignoresSafeArea()
                     VStack(spacing: 25.0) {
                         Spacer()
@@ -101,7 +101,7 @@ struct ContentView: View {
                                                 .font(.headline)
                                             Spacer()
                                         }
-                                        .background(Color.pink)
+                                        .background(Color(red: 0.737, green: 0.615, blue: 0.759))
                                         .cornerRadius(10)
                                         .frame(width: 330)
                                         
@@ -115,7 +115,7 @@ struct ContentView: View {
                                                 .font(.headline)
                                             Spacer()
                                         }
-                                        .background(Color.pink)
+                                        .background(Color(red: 0.737, green: 0.615, blue: 0.759))
                                         .cornerRadius(10)
                                         .frame(width: 330)
                                     }
