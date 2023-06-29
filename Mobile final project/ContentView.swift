@@ -92,7 +92,7 @@ struct ContentView: View {
                                 Spacer()
                                 
                                 VStack(alignment: .leading, spacing:60.0){
-                                    NavigationLink(destination: SwiftUIView()) {
+                                    NavigationLink(destination: View_3()) {
                                         HStack{
                                             Text("My Recipes")
                                             
@@ -106,7 +106,7 @@ struct ContentView: View {
                                         .frame(width: 330)
                                         
                                     }
-                                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                                    NavigationLink(destination: SwiftUIView()) {
                                         HStack{
                                             Text("Recipes to try")
                                             
