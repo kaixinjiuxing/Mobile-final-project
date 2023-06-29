@@ -1,4 +1,4 @@
-//
+
 //  SwiftUIView.swift
 //  Mobile final project
 //
@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SwiftUIView: View {
-    @State var recipesToTry: String = ""
-    @State var myRecipes: String = ""
+    @State var recipesToTry: String = "Type or insert recipe links!"
+    @State var myRecipes: String = "Type or insert recipe links!"
     
     var body: some View {
         NavigationStack {
@@ -28,10 +28,10 @@ struct SwiftUIView: View {
                         .padding(.leading, 23.0)
                     
                     
-                    TextField("Type or insert recipe links here!", text: $recipesToTry)
+                    TextEditor(text: $recipesToTry)
                         .padding(.all, 120.0)
                         .multilineTextAlignment(.center)
-                        .background(Color.white.cornerRadius(10))
+                        .background(Color.white.cornerRadius(10).shadow(color: Color.gray, radius: 15))
                    
                     
                     Text("My Recipes:")
@@ -44,7 +44,7 @@ struct SwiftUIView: View {
                     TextField("Type or insert recipe links here!", text: $myRecipes)
                         .padding(.all, 120.0)
                         .multilineTextAlignment(.center)
-                        .background(Color.white.cornerRadius(10))
+                        .background(Color.white.cornerRadius(10).shadow(color: Color.gray, radius: 15))
                     
                 }
                 .padding(.all)
