@@ -12,12 +12,22 @@ struct Recipe_Link__map_: View {
         ZStack{
             Color.pink
                 .ignoresSafeArea()
-            Rectangle()
+           
+            RoundedRectangle(cornerRadius: 15)
                 .fill(.white)
-           
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 
+       
+            VStack(alignment:( .leading), spacing: (25)) {
+                Text("World Recipe: Pad Thai")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .multilineTextAlignment(.leading)
+                Text("Pad Thai is a stirfry rice noodle dish that originated in Thailand during the 20th century. ")
+            }
+            .padding(/*@START_MENU_TOKEN@*/.all, 24.0/*@END_MENU_TOKEN@*/)
            
-           
+        
         }
     }
     }
