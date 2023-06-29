@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct SwiftUIView: View {
+    @State var recipesToTry: String = ""
+    @State var myRecipes: String = ""
     
     var body: some View {
         NavigationStack {
             
             ZStack {
-                Color.white
+                Color.pink
                     .ignoresSafeArea()
-                VStack(alignment: .leading) {
+                
+                VStack(alignment:( .leading), spacing: (25)) {
                     
                     Text("Recipes to Try: ")
                         .font(.title)
@@ -25,28 +28,29 @@ struct SwiftUIView: View {
                         .padding(.leading, 23.0)
                     
                     
-                    TextField("Type or insert recipe links here!", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                    TextField("Type or insert recipe links here!", text: $recipesToTry)
                         .padding(.all, 120.0)
                         .multilineTextAlignment(.center)
-                        .border(Color.pink, width: 3)
-                    Spacer()
+                        .background(Color.white.cornerRadius(10))
+                   
                     
                     Text("My Recipes:")
                         .font(.title)
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.leading)
                         .padding(.leading, 23.0)
+                        
                     
-                    TextField("Type or insert recipe links here!", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                    TextField("Type or insert recipe links here!", text: $myRecipes)
                         .padding(.all, 120.0)
                         .multilineTextAlignment(.center)
-                        .border(Color.pink, width: 3)
+                        .background(Color.white.cornerRadius(10))
                     
                 }
                 .padding(.all)
                 .navigationTitle("Recipe Journal")
                 .navigationBarTitleDisplayMode(.inline)
-                .toolbarBackground(Color.pink, for: .navigationBar)
+                .toolbarBackground(Color.white, for: .navigationBar)
                 .toolbarBackground(.visible, for: .navigationBar)
                 .bold()
             }
