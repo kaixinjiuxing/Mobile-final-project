@@ -9,43 +9,91 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-       
         NavigationStack {
-            VStack {
-                Text("ReceipEats")
-                    .font(.largeTitle)
-                    .fontWeight(.heavy)
-                    .multilineTextAlignment(.center)
-                Image("Map")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                
-                VStack(alignment: .leading, spacing: 35.0){
-                    VStack(alignment: .leading, spacing: 1.0){
-                        Text("Hello!")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                      
-                        Text("Explore the different types of food from different cultures by clicking the pins on the map above")
-                                .font(.subheadline)
-                                .fontWeight(.bold)
-                    }
+            ZStack {
+                        Color(.systemPink)
+                            .ignoresSafeArea()
+                VStack(spacing: 25.0) {
+                    Spacer()
+                    Text("ReceipEats")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .multilineTextAlignment(.center)
+                    Image("Map")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
                     
+                    
+                    ZStack{
+                        VStack(alignment: .leading){
+                            
+                            VStack(alignment: .leading){
+                                Text("Hello!")
+                                    .font(.largeTitle)
+                                
+                                    .fontWeight(.bold)
+                                
+                                Text("Explore the different types of food from different cultures by clicking the pins on the map above")
+                                    .font(.subheadline)
+                                    .fontWeight(.bold)
+                            }
+                            Spacer()
+                            VStack(alignment: .leading, spacing:60.0){
+                                NavigationLink(destination: SwiftUIView()) {
+                                    HStack{
+                                        Text("My Recipes")
+                                        
+                                            .padding()
+                                            .foregroundColor(Color.white)
+                                            .font(.headline)
+                                        Spacer()
+                                    }
+                                    .background(Color.pink)
+                                    .cornerRadius(10)
+                                    .frame(width: 330)
+                                    
+                                }
+                                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                                    HStack{
+                                        Text("Recipes to try")
+                                        
+                                            .padding()
+                                            .foregroundColor(Color.white)
+                                            .font(.headline)
+                                        Spacer()
+                                    }
+                                    .background(Color.pink)
+                                    .cornerRadius(10)
+                                    .frame(width: 330)
+                                }
+                            }
+                            Spacer()
+                        }
+                        .padding(10)
+                        .background(Rectangle()
+                            .foregroundColor(.white))
+                        .cornerRadius(15)
+                        .shadow(radius: 15)
                         
-                    VStack(alignment: .leading, spacing:60.0){
-                        NavigationLink(destination: SwiftUIView()) {
-                            Text("My Recipes")
-                        }
-                        NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                            Text("Recipes to Try")
-                        }
+                        
                     }
+                    Spacer()
                 }
+                .padding(.bottom, -25)
+                        .padding(5)
+                                .background(Rectangle()
+                                    .foregroundColor(.white))
+                                        .cornerRadius(15)
+                                        .shadow(radius: 15)
+                                .padding()
+                
+                
+                
             }
         }
-        
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
