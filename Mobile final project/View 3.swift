@@ -6,23 +6,41 @@
 //
 import SwiftUI
 struct View_3: View {
+    @State private var myrecipe = "My Recipe"
     @State private var ingredients = "Add Ingredients"
     @State private var steps = "Add Steps"
     @State private var chefsnotes = "Add Notes"
     
     var body: some View {
         NavigationStack {
-            TextEditor (text: $ingredients)
-                .foregroundStyle(.secondary)
-                .padding(.horizontal)
-                .navigationTitle("Ingredients")
-            TextEditor (text: $steps)
-                .foregroundStyle(.secondary)
-                .padding(.horizontal)
-                .navigationTitle("Steps")
-            TextEditor (text: $chefsnotes)
-                .padding(.horizontal)
-                .navigationTitle("Chef's Notes")
+            TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: $myrecipe)
+                 .multilineTextAlignment(.center)
+                 .font(.largeTitle)
+                 .border(Color.gray, width: 1)
+            VStack {
+                Text("Ingredients")
+                    .font(.title)
+                    .fontWeight(.medium)
+                    .multilineTextAlignment(.leading)
+                TextEditor (text: $ingredients)
+                        .foregroundStyle(.secondary)
+                        .padding(.horizontal)
+                Text("Steps")
+                    .font(.title)
+                    .fontWeight(.medium)
+                    .multilineTextAlignment(.leading)
+                TextEditor (text: $steps)
+                        .foregroundStyle(.secondary)
+                        .padding(.horizontal)
+                Text("Chef's Notes")
+                    .font(.title)
+                    .fontWeight(.medium)
+                    .multilineTextAlignment(.leading)
+                TextEditor (text: $chefsnotes)
+                        .foregroundStyle(.secondary)
+                        .padding(.horizontal)
+            }
+            
                 }
             }
         }
