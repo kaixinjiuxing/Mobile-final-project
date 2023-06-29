@@ -66,12 +66,12 @@ struct ContentView: View {
                             .position(x:120, y:30)
                             .frame(width: 20, height: 20)
                             
-                            NavigationLink(destination: View_3()) {
+                            NavigationLink(destination: Recipe_Link__map_()) {
                                 Image("Pin")
                                     .resizable()
                                     .frame(width: 20, height: 20)
                             }
-                            .position(x:100, y:-37)
+                            .position(x:100, y:-14)
                             .frame(width: 20, height: 20)
                         }
                         
