@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0035D3982A4CCA000017ECA4 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0035D3972A4CCA000017ECA4 /* SwiftUIView.swift */; };
 		0035D39A2A4CCA120017ECA4 /* View 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0035D3992A4CCA110017ECA4 /* View 3.swift */; };
 		0035D39D2A4DF6750017ECA4 /* Core Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0035D39B2A4DF6750017ECA4 /* Core Data.xcdatamodeld */; };
+		0035D39F2A4DFE3F0017ECA4 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0035D39E2A4DFE3F0017ECA4 /* SwiftUIView.swift */; };
+		0035D3A12A4E052B0017ECA4 /* Recipe Link (map).swift in Sources */ = {isa = PBXBuildFile; fileRef = 0035D3A02A4E052B0017ECA4 /* Recipe Link (map).swift */; };
 		BC5382F62A4A071500DD55CE /* Mobile_final_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5382F52A4A071500DD55CE /* Mobile_final_projectApp.swift */; };
 		BC5382F82A4A071500DD55CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5382F72A4A071500DD55CE /* ContentView.swift */; };
 		BC5382FA2A4A071B00DD55CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5382F92A4A071B00DD55CE /* Assets.xcassets */; };
@@ -17,9 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0035D3972A4CCA000017ECA4 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		0035D3992A4CCA110017ECA4 /* View 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View 3.swift"; sourceTree = "<group>"; };
 		0035D39C2A4DF6750017ECA4 /* Core Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Core Data.xcdatamodel"; sourceTree = "<group>"; };
+		0035D39E2A4DFE3F0017ECA4 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		0035D3A02A4E052B0017ECA4 /* Recipe Link (map).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe Link (map).swift"; sourceTree = "<group>"; };
 		BC5382F22A4A071500DD55CE /* Mobile final project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile final project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5382F52A4A071500DD55CE /* Mobile_final_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_final_projectApp.swift; sourceTree = "<group>"; };
 		BC5382F72A4A071500DD55CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,7 +61,8 @@
 			children = (
 				BC5382F52A4A071500DD55CE /* Mobile_final_projectApp.swift */,
 				BC5382F72A4A071500DD55CE /* ContentView.swift */,
-				0035D3972A4CCA000017ECA4 /* SwiftUIView.swift */,
+				0035D39E2A4DFE3F0017ECA4 /* SwiftUIView.swift */,
+				0035D3A02A4E052B0017ECA4 /* Recipe Link (map).swift */,
 				0035D39B2A4DF6750017ECA4 /* Core Data.xcdatamodeld */,
 				0035D3992A4CCA110017ECA4 /* View 3.swift */,
 				BC5382F92A4A071B00DD55CE /* Assets.xcassets */,
@@ -148,9 +151,10 @@
 			files = (
 				BC5382F82A4A071500DD55CE /* ContentView.swift in Sources */,
 				0035D39D2A4DF6750017ECA4 /* Core Data.xcdatamodeld in Sources */,
+				0035D39F2A4DFE3F0017ECA4 /* SwiftUIView.swift in Sources */,
+				0035D3A12A4E052B0017ECA4 /* Recipe Link (map).swift in Sources */,
 				0035D39A2A4CCA120017ECA4 /* View 3.swift in Sources */,
 				BC5382F62A4A071500DD55CE /* Mobile_final_projectApp.swift in Sources */,
-				0035D3982A4CCA000017ECA4 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,4 +1,4 @@
-//
+
 //  SwiftUIView.swift
 //  Mobile final project
 //
@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SwiftUIView: View {
-    @State var recipesToTry: String = ""
-    @State var myRecipes: String = ""
+    @State var recipesToTry: String = "Type or insert recipe links!"
+    @State var myRecipes: String = "Type or insert recipe links!"
     
     var body: some View {
         NavigationStack {
@@ -18,7 +18,7 @@ struct SwiftUIView: View {
                 Color.pink
                     .ignoresSafeArea()
                 
-                VStack(alignment:( .leading), spacing: (25)) {
+                VStack(alignment:( .leading), spacing: (50)) {
                     
                     Text("Recipes to Try: ")
                         .font(.title)
@@ -28,13 +28,13 @@ struct SwiftUIView: View {
                         .padding(.leading, 23.0)
                     
                     
-                    TextField("Type or insert recipe links here!", text: $recipesToTry)
-                        .padding(.all, 120.0)
+                    TextEditor(text: $recipesToTry)
+                        .padding(.all, 50.0)
                         .multilineTextAlignment(.center)
-                        .background(Color.white.cornerRadius(10))
+                        .background(Color.white.cornerRadius(10).shadow(color: Color.gray, radius: 15))
                    
                     
-                    Text("My Recipes:")
+                /*    Text("My Recipes:")
                         .font(.title)
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.leading)
@@ -44,8 +44,9 @@ struct SwiftUIView: View {
                     TextField("Type or insert recipe links here!", text: $myRecipes)
                         .padding(.all, 120.0)
                         .multilineTextAlignment(.center)
-                        .background(Color.white.cornerRadius(10))
-                    
+                        .background(Color.white.cornerRadius(10).shadow(color: Color.gray, radius: 15))
+                   
+                */
                 }
                 .padding(.all)
                 .navigationTitle("Recipe Journal")
@@ -53,6 +54,7 @@ struct SwiftUIView: View {
                 .toolbarBackground(Color.white, for: .navigationBar)
                 .toolbarBackground(.visible, for: .navigationBar)
                 .bold()
+                 
             }
         }
     }
