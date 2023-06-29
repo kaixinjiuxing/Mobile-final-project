@@ -17,7 +17,7 @@ struct View_3: View {
                  .multilineTextAlignment(.center)
                  .font(.largeTitle)
                  .foregroundColor(.white)
-                 .background(Color(red: 0.737, green: 0.615, blue: 0.759))
+                 .background(Color.pink)
             VStack {
                 Text("Ingredients")
                     .font(.title)
