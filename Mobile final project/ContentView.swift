@@ -50,12 +50,12 @@ struct ContentView: View {
                             .position(x:14, y:-19)
                             .frame(width: 20, height: 20)
                             
-                            NavigationLink(destination: View_3()) {
+                            NavigationLink(destination: Pizza()) {
                                 Image("Pin")
                                     .resizable()
                                     .frame(width: 20, height: 20)
                             }
-                            .position(x:10, y:-60)
+                            .position(x:20, y:-50)
                             .frame(width: 20, height: 20)
                             
                             NavigationLink(destination: View_3()) {
@@ -72,6 +72,14 @@ struct ContentView: View {
                                     .frame(width: 20, height: 20)
                             }
                             .position(x:100, y:-14)
+                            .frame(width: 20, height: 20)
+                            
+                            NavigationLink(destination: Recipe_Link_Japan_()) {
+                                Image("Pin")
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                            }
+                            .position(x:130, y:-40)
                             .frame(width: 20, height: 20)
                         }
                         
