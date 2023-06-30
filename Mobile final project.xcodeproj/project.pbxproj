@@ -12,6 +12,8 @@
 		0035D39F2A4DFE3F0017ECA4 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0035D39E2A4DFE3F0017ECA4 /* SwiftUIView.swift */; };
 		0035D3A12A4E052B0017ECA4 /* Recipe Link (map).swift in Sources */ = {isa = PBXBuildFile; fileRef = 0035D3A02A4E052B0017ECA4 /* Recipe Link (map).swift */; };
 		0035D3A32A4E21760017ECA4 /* Recipe Link (Japan).swift in Sources */ = {isa = PBXBuildFile; fileRef = 0035D3A22A4E21760017ECA4 /* Recipe Link (Japan).swift */; };
+		164174222A4F44FD00DB909C /* CameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164174212A4F44FD00DB909C /* CameraApp.swift */; };
+		164174242A4F452E00DB909C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164174232A4F452E00DB909C /* ImagePicker.swift */; };
 		BC5382F62A4A071500DD55CE /* Mobile_final_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5382F52A4A071500DD55CE /* Mobile_final_projectApp.swift */; };
 		BC5382F82A4A071500DD55CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5382F72A4A071500DD55CE /* ContentView.swift */; };
 		BC5382FA2A4A071B00DD55CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5382F92A4A071B00DD55CE /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 		0035D39E2A4DFE3F0017ECA4 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		0035D3A02A4E052B0017ECA4 /* Recipe Link (map).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe Link (map).swift"; sourceTree = "<group>"; };
 		0035D3A22A4E21760017ECA4 /* Recipe Link (Japan).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe Link (Japan).swift"; sourceTree = "<group>"; };
+		164174212A4F44FD00DB909C /* CameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraApp.swift; sourceTree = "<group>"; };
+		164174232A4F452E00DB909C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		BC5382F22A4A071500DD55CE /* Mobile final project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile final project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5382F52A4A071500DD55CE /* Mobile_final_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_final_projectApp.swift; sourceTree = "<group>"; };
 		BC5382F72A4A071500DD55CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				0035D3A22A4E21760017ECA4 /* Recipe Link (Japan).swift */,
 				0035D39B2A4DF6750017ECA4 /* Core Data.xcdatamodeld */,
 				0035D3992A4CCA110017ECA4 /* View 3.swift */,
+				164174212A4F44FD00DB909C /* CameraApp.swift */,
+				164174232A4F452E00DB909C /* ImagePicker.swift */,
 				BC5382F92A4A071B00DD55CE /* Assets.xcassets */,
 				BC5382FB2A4A071B00DD55CE /* Preview Content */,
 			);
@@ -155,7 +161,9 @@
 				BC5382F82A4A071500DD55CE /* ContentView.swift in Sources */,
 				0035D39D2A4DF6750017ECA4 /* Core Data.xcdatamodeld in Sources */,
 				0035D39F2A4DFE3F0017ECA4 /* SwiftUIView.swift in Sources */,
+				164174242A4F452E00DB909C /* ImagePicker.swift in Sources */,
 				0035D3A12A4E052B0017ECA4 /* Recipe Link (map).swift in Sources */,
+				164174222A4F44FD00DB909C /* CameraApp.swift in Sources */,
 				0035D3A32A4E21760017ECA4 /* Recipe Link (Japan).swift in Sources */,
 				0035D39A2A4CCA120017ECA4 /* View 3.swift in Sources */,
 				BC5382F62A4A071500DD55CE /* Mobile_final_projectApp.swift in Sources */,
@@ -290,6 +298,9 @@
 				DEVELOPMENT_TEAM = 5NAHYXUCX6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera access to add your own photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow access to add your own photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -319,6 +330,9 @@
 				DEVELOPMENT_TEAM = 5NAHYXUCX6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera access to add your own photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow access to add your own photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
