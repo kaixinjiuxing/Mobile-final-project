@@ -29,10 +29,7 @@ struct Pizza: View {
                     .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0), resizingMode: .stretch)
                     .aspectRatio(contentMode: .fit)
                 Link("A Couple Cooks Italian Pizza Recipe", destination: URL(string: "https://www.acouplecooks.com/italian-pizza-recipe/")! )
-                    .environment(\.openURL, OpenURLAction { url in
-                        print("Open \(url)")
-                        return .handled
-                    })
+                    
                     
                    
             }

@@ -28,11 +28,8 @@ struct Recipe_Link__map_: View {
                 Image("Screenshot 2023-06-29 at 1.04.44 PM")
                     .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0), resizingMode: .stretch)
                     .aspectRatio(contentMode: .fit)
-                Link("NY Times Pad Thai Recipe", destination: URL(string: "https://cooking.nytimes.com/recipes/1013121-pad-thai")! )
-                    .environment(\.openURL, OpenURLAction { url in
-                        print("Open \(url)")
-                        return .handled
-                    })
+                Link("NY Times Pad Thai Recipe", destination: URL(string: "https://cooking.nytimes.com/recipes/1013121-pad-thai")!)
+                    
                     
                    
             }

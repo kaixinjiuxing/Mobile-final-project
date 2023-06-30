@@ -30,10 +30,7 @@ struct Recipe_Link_Japan_: View {
                     .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0), resizingMode: .stretch)
                     .aspectRatio(contentMode: .fit)
                 Link("Takoyaki Recipe", destination: URL(string: "https://www.foodnetwork.com/recipes/food-network-kitchen/takoyaki-12358756")! )
-                    .environment(\.openURL, OpenURLAction { url in
-                        print("Open \(url)")
-                        return .handled
-                    })
+                   
                     
                    
             }
