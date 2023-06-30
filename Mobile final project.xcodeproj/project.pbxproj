@@ -18,7 +18,7 @@
 		BC5382F82A4A071500DD55CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5382F72A4A071500DD55CE /* ContentView.swift */; };
 		BC5382FA2A4A071B00DD55CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5382F92A4A071B00DD55CE /* Assets.xcassets */; };
 		BC5382FD2A4A071B00DD55CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5382FC2A4A071B00DD55CE /* Preview Assets.xcassets */; };
-		BC873FB22A4F3D6500135025 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC873FB12A4F3D6500135025 /* Pizza.swift */; };
+		BC873FB42A4F49A800135025 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC873FB32A4F49A800135025 /* Pizza.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,7 @@
 		BC5382F72A4A071500DD55CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC5382F92A4A071B00DD55CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5382FC2A4A071B00DD55CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BC873FB12A4F3D6500135025 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		BC873FB32A4F49A800135025 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			children = (
 				BC5382F52A4A071500DD55CE /* Mobile_final_projectApp.swift */,
 				BC5382F72A4A071500DD55CE /* ContentView.swift */,
-				BC873FB12A4F3D6500135025 /* Pizza.swift */,
+				BC873FB32A4F49A800135025 /* Pizza.swift */,
 				0035D39E2A4DFE3F0017ECA4 /* SwiftUIView.swift */,
 				0035D3A02A4E052B0017ECA4 /* Recipe Link (map).swift */,
 				0035D3A22A4E21760017ECA4 /* Recipe Link (Japan).swift */,
@@ -169,6 +169,7 @@
 				164174222A4F44FD00DB909C /* CameraApp.swift in Sources */,
 				0035D3A32A4E21760017ECA4 /* Recipe Link (Japan).swift in Sources */,
 				0035D39A2A4CCA120017ECA4 /* View 3.swift in Sources */,
+				BC873FB42A4F49A800135025 /* Pizza.swift in Sources */,
 				BC5382F62A4A071500DD55CE /* Mobile_final_projectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
