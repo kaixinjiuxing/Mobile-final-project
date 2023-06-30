@@ -10,7 +10,7 @@ import SwiftUI
 struct Recipe_Link_Japan_: View {
     var body: some View {
         ZStack{
-            Color.pink
+            Color(red: 0.737, green: 0.615, blue: 0.759)
                 .ignoresSafeArea()
            
             RoundedRectangle(cornerRadius: 15)
@@ -23,7 +23,7 @@ struct Recipe_Link_Japan_: View {
                     .font(.title)
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.leading)
-                Text("Takoyaki, grilled octopus, is a popular Japanese street snack originating in Osaka in the 1930s. It is made with crispy, flavored octopus balls which are then garnished with takoyaki sauce, seaweed, mayonnaise, and dried bonito flakes")
+                Text("Takoyaki, grilled octopus, is a popular Japanese street snack originating in Osaka in the 1930s. It is made with crispy, flavored octopus balls which are garnished with takoyaki sauce, seaweed, mayonnaise, and dried bonito flakes")
                 
                 
                 Image("Screenshot 2023-06-29 at 1.46.36 PM")
